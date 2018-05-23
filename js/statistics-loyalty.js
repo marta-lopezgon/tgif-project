@@ -14,11 +14,11 @@ var statistics = {
     "missedLeastVote": []
 }
 
-//JSON CALL TO SERVER
+//JSON CALL
 
 $(document).ready(function () {
 
-    if (window.location.pathname == "/Senate-Party-Loyalty-statistics.html") {
+    if (window.location.pathname == "/tgif-project/Senate-Party-Loyalty-statistics.html") {
         $.ajax({
             type: "get",
             url: "https://api.propublica.org/congress/v1/113/senate/members.json",
@@ -51,7 +51,7 @@ $(document).ready(function () {
             }
         });
     }
-    if (window.location.pathname == "/House-Party-Loyalty-statistics.html") {
+    if (window.location.pathname == "/tgif-project/House-Party-Loyalty-statistics.html") {
         $.ajax({
             type: "get",
             url: "https://api.propublica.org/congress/v1/113/house/members.json",

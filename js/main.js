@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     var dropSelected = document.getElementById("stateChecked");
 
-    if (window.location.pathname == "/senate-starter-page.html") {
+    if (window.location.pathname == "/tgif-project/senate-starter-page.html") {
         $.ajax({
             type: "get",
             url: "https://api.propublica.org/congress/v1/113/senate/members.json",
@@ -53,7 +53,7 @@ $(document).ready(function () {
             }
         });
     }
-    if (window.location.pathname == "/house-starter-page.html") {
+    if (window.location.pathname == "/tgif-project/house-starter-page.html") {
         $.ajax({
             type: "get",
             url: "https://api.propublica.org/congress/v1/113/house/members.json",

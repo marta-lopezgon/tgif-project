@@ -18,7 +18,7 @@ var statistics = {
 
 $(document).ready(function () {
 
-    if (window.location.pathname == "/Senate-Attendance-statistics.html") {
+    if (window.location.pathname == "/tgif-project/Senate-Attendance-statistics.html") {
         $.ajax({
             type: "get",
             url: "https://api.propublica.org/congress/v1/113/senate/members.json",
@@ -51,7 +51,7 @@ $(document).ready(function () {
             }
         });
     }
-    if (window.location.pathname == "/House-Attendance-statistics.html") {
+    if (window.location.pathname == "/tgif-project/House-Attendance-statistics.html") {
         $.ajax({
             type: "get",
             url: "https://api.propublica.org/congress/v1/113/house/members.json",
